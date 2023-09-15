@@ -28,15 +28,22 @@ body{
 
 /* Estilos del footer */
 footer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 80% 20%;
-    width: 100%;
-    height: 150px;
     background-color: rgb(61, 158, 248);
+    width: 100%;
+    min-width: 350px;
+    height: auto;
     justify-items: center;
     align-items: center;
     overflow: hidden;
+}
+footer section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-auto-rows: 200px;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    
 }
 /* Estilos de la imagen  */
 .footer-image img{
@@ -51,6 +58,8 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
+    overflow: hidden;
+    padding-top: 30px;
 }
 .footer-address h3 {
     font-size: 1.4rem;
@@ -67,12 +76,26 @@ footer {
 }
 .footer-redes p {
     font-size: 1.5rem;
-    padding-bottom: 10px;
+    
 }
 .footer-redes ul{
     list-style: none;
     display: flex;
+    padding: 0  ;
+}
+.footer-horario {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-horario h3{
+    font-size: 1.5rem;
 }
 .footer-copy {
-    grid-area: 2 / 1 / 3 / 6;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+}
 }

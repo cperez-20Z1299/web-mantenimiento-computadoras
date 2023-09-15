@@ -11,89 +11,199 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/Styles.css">
+    <link rel="stylesheet" href="./assets/css/Styles.css">
     <title>Servicios de Mantenimiento</title>
 </head>
+
 <body>
-    
-<header>
-    <nav id="navbar-example2" class="navbar px-3 mb-3">
 
-        <a class="navbar-brand" href="#"><img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
-                width="40" alt=""> Servicios de mantenimiento</a>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading1">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading2">Hardware y software</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading3">Equipos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading4">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main>
+    <header>
+        <nav id="navbar-example2" class="navbar px-3 mb-3">
 
-<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-<h4 id="scrollspyHeading1">Home</h4>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quos quisquam, mollitia architecto
-    neque, libero cumque error, tenetur aspernatur dolorem recusandae dicta magni? Ab placeat maiores autem
-    facere incidunt explicabo.</p>
-<h4 id="scrollspyHeading2"> Hardware y Software</h4>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dolorum maiores cupiditate magnam sint
-    molestias, consequuntur debitis nihil? Ullam distinctio dolor accusamus ratione doloremque? Molestiae saepe
-    provident mollitia! Repudiandae, impedit?</p>
-<h4 id="scrollspyHeading3">Equipos</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ab tempora ipsa voluptatem quam enim
-    eum, magni repudiandae similique deleniti eligendi soluta recusandae maxime doloribus tempore vitae nihil,
-    quas quis?</p>
-<h4 id="scrollspyHeading4">Contacto</h4>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, facilis. Vero odit impedit eos voluptatem
-    in repellat a necessitatibus non, sunt veniam perspiciatis sapiente delectus at, accusantium odio optio
-    omnis?</p>
-</div>
-</main>
-<footer>
-    <div class="footer-image">
-        <img src="Imagenes/6b8cd9b3-2a1f-4e49-9c24-7cdefc65eb34.jpg" alt="">
-    </div>
-    <div class="footer-address">
-        <h3>
-            Información de contacto
-        </h3>
-        <address>
-            <p><strong>Telefono:</strong> (502) 5904 5328</p>
-            <p>Correo electrónico <br> <a href="mailto:reparaciondecomputadorasgymart@gmail.com">reparaciondecomputadorasgymart@gmail.com</a></p>
-         </address>
-    </div>
-    <!-- esta pendiente Whatsapp -->
-    <div class="footer-redes">
-        <p>¡Síguenos!</p>
-        <ul>
-            <li><a href="https://www.facebook.com/profile.php?id=100093351325423&sk=about_contact_and_basic_info"><img src="Imagenes/icons8-facebook-48.png" alt=""></a></li>
-            <li><a href="https://www.instagram.com/gtserviciostecnicos/?igshid=NGExMmI2YTkyZg%3D%3D"><img src="Imagenes/icons8-instagram-48.png" alt=""></a></li>
-            <li><a href="whatsapp://send?phone=59045328"><img src="Imagenes/icons8-whatsapp-48.png" alt=""></a></li>
-        </ul>
-    </div>
-    <div >
-        <h3>Horario de atención</h3>
-        <p>Lunes a Viernes: 8:00 AM - 5:00 PM</p>
-    </div>
-    <div>
-        <p><a href="#"><strong> Terminos de uso</strong></a></p>
-    </div>
-    <p class="footer-copy">&copy; 2023 Servicios tecnicos Mart. Todos los derechos reservados.</p>
-  </footer>
+            <a class="navbar-brand" href="#"><img src="./assets/img/h (1).png" width="40" alt=""> Servicios de
+                mantenimiento</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading3">Hardware y software</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading4">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+                    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                    <h4 id="scrollspyHeading1" class="titulos-pages">Home</h4>
+                    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/Reparación (1).png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/Reparación Y mantenimientos de Computadoras escritorio (2).png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/Reparación.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/Reparación Y Mantenimiento de Pc.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <h4 id="scrollspyHeading2" class="titulos-pages">Servicios</h4>
+                    <div class="container overflow-hidden text-center">
+                        <div class="row gy-5">
+                            <div class="col-3">
+                                <div class="p-3"><div class="card" style="width: 18rem;">
+                                    <img src="./assets/img/mantenimiento preventivo.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">MANTENIMIENTO LIMPIEZA PREVENTIVO</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                  </div></div>
+                            </div>
+                            <div class="col-3">
+                                <div class="p-3"><div class="card" style="width: 18rem;">
+                                    <img src="https://www.midas.com.mx/wp-content/uploads/2017/08/midas-servicios-diagnostico-por-computadora.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">DIAGNÓSTICO DE COMPUTADORA</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                  </div></div>
+                            </div>
+                            <div class="col-3">
+                                <div class="p-3"><div class="card" style="width: 18rem;">
+                                    <img src="https://mayoresconectados.com.ar/wp-content/uploads/2021/09/antivirus-en-la-computadora-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">DESINFECCIONES DE VIRUS E INSTALACIÓN DE ANTIVIRUS</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                  </div></div>
+                            </div>
+                            <div class="col-3">
+                                <div class="p-3"><div class="card" style="width: 18rem;">
+                                    <img src="https://www.evisos.cl/img/tmp/2022/01/15/limpieza-y-mantencion-pc-notebook-y-all-in-one_9wwzi98_3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">FORMATEOS E INTALACION DE SOFWARES, OFFICE PLUS</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                  </div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 id="scrollspyHeading3" class="titulos-pages">Hardware y Software</h4>
+                        <div class="hardware-software">
+                            <div class="container overflow-hidden text-center">
+                                <div class="row gy-5">
+                                    <div class="col-3">
+                                        <div class="p-3"><div class="card-body" style="width: 18rem;">
+                                            <img src="https://storage.aoc.com/assets/8714/AOC_U28G2XU_PV_-FRONT-large.png" height="250"  class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Monitor</h5>
+                                            </div>
+                                          </div></div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="p-3"><div class="card-body" style="width: 18rem;">
+                                            <img src="https://www.pngmart.com/files/7/Ink-Jet-Printer-PNG-Free-Download.png" height="250"  class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Impresora</h5>
+                                            </div>
+                                          </div></div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="p-3"><div class="card-body" style="width: 18rem;">
+                                            <img src="https://www.pngmart.com/files/6/Headphone-PNG-Pic.png" height="250"  class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Auriculares</h5>
+                                            </div>
+                                          </div></div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="p-3"><div class="card-body" style="width: 18rem;">
+                                            <img src="https://www.pngplay.com/wp-content/uploads/2/Gaming-Pc-Mouse-PNG-HD-Quality.png" height="250" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Mouse</h5>
+                                            </div>
+                                          </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <h4 id="scrollspyHeading4" class="titulos-pages">Contacto</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, facilis. Vero odit impedit
+                        eos
+                        voluptatem
+                        in repellat a necessitatibus non, sunt veniam perspiciatis sapiente delectus at, accusantium
+                        odio optio
+                        omnis?</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+    <footer>
+        <div class="footer-image">
+            <img src="Imagenes/6b8cd9b3-2a1f-4e49-9c24-7cdefc65eb34.jpg" alt="">
+        </div>
+        <div class="footer-address">
+            <h3>
+                Información de contacto
+            </h3>
+            <address>
+                <p><strong>Telefono:</strong> (502) 5904 5328</p>
+                <p>Correo electrónico <br> <a
+                        href="mailto:reparaciondecomputadorasgymart@gmail.com">reparaciondecomputadorasgymart@gmail.com</a>
+                </p>
+            </address>
+        </div>
+        <div class="footer-redes">
+            <p>¡Síguenos!</p>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100093351325423&sk=about_contact_and_basic_info"><img
+                            src="./assets/img/icons8-facebook-48.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/gtserviciostecnicos/?igshid=NGExMmI2YTkyZg%3D%3D"><img
+                            src="./assets//img/icons8-instagram-48.png" alt=""></a></li>
+                <li><a href="whatsapp://send?phone=59045328"><img src="./assets/img/icons8-whatsapp-48.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Horario de atención</h3>
+            <p>Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+        </div>
+        <div>
+            <p><a href="#"><strong> Terminos de uso</strong></a></p>
+        </div>
+        <p class="footer-copy">&copy; 2023 Servicios tecnicos Mart. Todos los derechos reservados.</p>
+    </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

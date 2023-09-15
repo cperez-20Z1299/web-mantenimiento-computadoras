@@ -2,7 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
+
+body{
+    background-color: #FFFEEF;
+}
+
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #424242;
+    color: white;
+}
+
+.titulos-pages{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hardware-software{
+    background-color: aqua;
+}
+
 /* Estilos del footer */
 footer {
     display: grid;

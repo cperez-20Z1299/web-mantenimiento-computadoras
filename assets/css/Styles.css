@@ -116,6 +116,14 @@ footer section{
 }
 /* Estilos del dialog */
 
+.precios{
+    position: relative;
+}
+.precios .title-precios{
+    position: absolute;
+    top: 25%;
+}
+
 .dialog {
     position: fixed;
     top: 50%;

@@ -79,7 +79,7 @@
                                     <div class="card-body">
                                       <h5 class="card-title">MANTENIMIENTO LIMPIEZA PREVENTIVO</h5>
                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                      <button onclick="abrirDialogo()" id="open-dialog-button">Abrir Diálogo</button>
                                     </div>
                                   </div></div>
                             </div>
@@ -164,12 +164,45 @@
                 </div>
             </div>
         </div>
+        <!-- Dialog -->
+        <dialog id="my-dialog" class="dialog">
+            <span id="close-dialog-button" class="close-button" onclick="cerrarDialogo()">X</span>
+    
+            <section class="dialog-content">
+                <div class="section-description">
+                    <p>¿Tu computadora necesita una mano? ¿Sientes que va más lenta que una tortuga? Estamos aquí para ayudarte. 
+                    En nuestro servicio de reparación de software, te ofrecemos soluciones 
+                    confiables para que tu PC vuelva a funcionar como nueva.</p>
+                    <p>
+                    Ya sea que necesites deshacerte de virus molestos, optimizar el rendimiento o recuperar archivos perdidos, estamos listos para poner manos a la obra.
+                    No somos los más experimentados del mundo, pero ponemos todo nuestro esfuerzo en cada proyecto. Si estás buscando una solución sencilla y asequible para 
+                    tus problemas de software, ¡has llegado al lugar adecuado! Contáctanos hoy mismo para programar una cita y descubre cómo podemos ayudarte a que tu computadora vuelva a funcionar como debe.
+                        </p>
+                        <div class="contact"><a href="#">Contáctanos</a></div>
+                </div>
+                <div class="sectiion-detailed-description">
+                    <hr>
+                    <h2>Descripción detallada</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    </ul>
+                    <div class="price-section">
+                        <h2>Precios</h2>
+                        <p><em>"Los precios varían según el problema, desde (rango de precios) hasta (rango de precios). Contáctanos para una cotización personalizada."</em> </p>
+                    </div>
+                </div>
+            </section>
+            </dialog>
     </main>
 
     <footer>
         <section>
             <div class="footer-image">
-                <img src="Imagenes/6b8cd9b3-2a1f-4e49-9c24-7cdefc65eb34.jpg" alt="">
+                <img src="assets/img/h (1).png" alt="">
             </div>
             <div class="footer-address">
                 <h3>
@@ -177,7 +210,7 @@
                 </h3>
                 <address>
                     <p><strong>Telefono:</strong> (502) 5904 5328</p>
-                    <p>Correo electrónico <br> <a
+                    <p><strong>Correo electrónico</strong> <br> <a class="a"
                             href="mailto:reparaciondecomputadorasgymart@gmail.com">reparaciondecomputadorasgymart@gmail.com</a>
                     </p>
                 </address>
@@ -208,7 +241,20 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+        const openButton = document.getElementById('open-dialog-button');
+        const closeButton = document.getElementById('close-dialog-button');
+        const dialog = document.getElementById('my-dialog');
+
+        function abrirDialogo() {
+                    dialog.showModal();
+                }
+
+        function cerrarDialogo() {
+            dialog.close();
+        }
+    </script>
+        
 </body>
 
 </html>

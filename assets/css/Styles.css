@@ -14,6 +14,7 @@ body{
     padding-bottom: 20px;
     background-color: #424242;
     color: white;
+    background: linear-gradient(to top, #ffffff, #0074e4);
 }
 
 .titulos-pages{
@@ -28,14 +29,15 @@ body{
 
 /* Estilos del footer */
 footer {
-    background-color: rgb(61, 158, 248);
     width: 100%;
     min-width: 350px;
     height: auto;
     justify-items: center;
     align-items: center;
     overflow: hidden;
+    background: linear-gradient(to top, #0074e4, #ffffff);
 }
+    
 footer section{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -68,6 +70,9 @@ footer section{
 .footer-address p {
     line-height: 1.5;
 }
+.footer-address a {
+    color: #0074e4;
+}
 /* Estilos de redes */
 .footer-redes {
     display: flex;
@@ -83,6 +88,7 @@ footer section{
     display: flex;
     padding: 0  ;
 }
+/* Estilos de horario */
 .footer-horario {
     display: flex;
     justify-items: center;
@@ -92,10 +98,116 @@ footer section{
 .footer-horario h3{
     font-size: 1.5rem;
 }
+.footer-terminos a {
+    color: white;
+}
+.footer-terminos a:hover {
+    color: rgb(15, 214, 148);
+}
+.footer-terminos a:visited {
+    color: rgb(113, 39, 209);
+}
+/* Estilos del copyright */
 .footer-copy {
     display: flex;
     justify-items: center;
     flex-direction: column;
     text-align: center;
 }
-}
+/* Estilos del dialog */
+
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -28%);
+    background: linear-gradient(80deg, #ffffff 50%, #8cd6165e 50%); /* Degradado de colores */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    height: 86vh;
+    z-index: 9999;
+    border: none;
+  }
+  
+    .dialog-content {
+      position: relative;
+      min-width: 240px;
+      width: 95%;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-auto-rows: auto;
+      margin: auto;  
+      gap: 20px;
+    }
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      color: #802020a2;
+      background-color: transparent;
+      border: none;
+      font-weight: 800;
+    }
+    .section-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      align-self: center;
+      text-align: center;
+    }
+    .section-description p {
+      font-size: 1.45rem;
+      line-height: 1.3; /* Espaciado entre líneas */
+      margin: 30px 0 0;
+      color: #130b09e3; 
+    }
+    .section-description .contact {
+      margin: auto;
+      width: 200px;
+      height: 40px;
+      background-color: orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom, #3399ff, #33ff99); /* Degradado de azul a verde claro */
+      margin: 35px 0;
+      font-size: 1.6rem;
+    }
+    .section-description .contact a{
+      text-decoration: none;
+    }
+  
+    .sectiion-detailed-description h2 {
+      width: 50%;
+      margin: auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .sectiion-detailed-description ul {
+      font-size: 1.5rem;
+      list-style-type: none; 
+      padding-left: 20px;
+      margin-left: 0; 
+    }
+    .sectiion-detailed-description ul li {
+    background-image: url("6579067_and_computers_hardware_mouse_pc_icon.png");
+    background-size: 20px 20px; /* Cambia el tamaño al que desees */
+    background-repeat: no-repeat;
+    padding-left: 30px; 
+  }
+    .price-section {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      width: 90%;
+      text-align: center;
+      margin: auto;
+    }
+  .price-section p {
+    font-size: 1.5rem;
+  }
